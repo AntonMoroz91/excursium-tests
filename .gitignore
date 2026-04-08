@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/
+pyvenv.cfg
+Lib/
+Scripts/
+screenshots/*.png
+reports/*.html
+.env

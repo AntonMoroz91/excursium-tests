@@ -28,6 +28,16 @@ Excursium — автоматизация тестирования
 - pip install -r requirements.txt
 - pytest tests/ -v
 
+Важно
+-----
+Перед запуском теста test_login.py создайте в корне проекта файл
+registered_user.json с валидными данными зарегистрированного пользователя:
+
+{
+  "email": "ваш_email@example.com",
+  "password": "ваш_пароль"
+}
+
 Структура проекта
 -----------------
 - excursium-tests/

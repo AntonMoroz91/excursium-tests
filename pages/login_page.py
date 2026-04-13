@@ -35,7 +35,7 @@ class LoginPage(BasePage):
 
     def click_login_button(self):
         btn = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.SUBMIT_BUTTON))
-        self.driver.execute_script("arguments[0].click();", btn)  # Клик через JS
+        self.driver.execute_script("arguments[0].click();", btn)
         time.sleep(2)
 
     def is_login_successful(self):

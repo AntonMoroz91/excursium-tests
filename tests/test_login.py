@@ -1,14 +1,25 @@
 import time
-from pages.main_page import MainPage
+import json
 from pages.login_page import LoginPage
-from test_data import TEST_EMAIL, TEST_PASSWORD
 
-def test_login(browser):
-    main_page = MainPage(browser)
-    main_page.open("https://excursium.com")
-    main_page.click(main_page.USER_ICON)
-    time.sleep(2)
+def test_login_with_registered_user(browser):
+    with open("registered_user.json", "r") as f:
+        user = json.load(f)
+
     login_page = LoginPage(browser)
-    login_page.login(TEST_EMAIL, TEST_PASSWORD)
-    time.sleep(2)  # подождать после клика
-    assert "excursium" in browser.current_url
+    login_page.open("https://excursium.com")
+    time.sleep(2)
+
+    login_page.open_login_icon()
+    time.sleep(1)
+
+    login_page.open_login_tab()
+    time.sleep(1)
+
+    login_page.enter_email(user["email"])
+    login_page.enter_password(user["password"])
+    login_page.click_login_button()
+
+    assert login_page.is_login_successful(), "Не удалось войти"
+
+    browser.save_screenshot("screenshots/TC-04_login_success.png")

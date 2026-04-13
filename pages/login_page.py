@@ -35,10 +35,9 @@ class LoginPage(BasePage):
 
     def click_login_button(self):
         btn = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.SUBMIT_BUTTON))
-        btn.click()
+        self.driver.execute_script("arguments[0].click();", btn)  # Клик через JS
         time.sleep(2)
 
     def is_login_successful(self):
-        # Успешный вход = ушли со страницы логина
         current_url = self.driver.current_url
         return "login" not in current_url and "login-vue" not in current_url

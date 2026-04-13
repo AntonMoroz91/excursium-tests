@@ -18,7 +18,7 @@ Excursium — автоматизация тестирования
 - Selenium
 - pytest
 - Page Object Model (POM)
-- Firefox + GeckoDriver
+- Google Chrome + ChromeDriver
 - Faker (для генерации тестовых данных при необходимости)
 
 Установка и запуск
@@ -32,12 +32,10 @@ Excursium — автоматизация тестирования
 -----
 Перед запуском test_login.py создайте в корне файл `registered_user.json`:
 
-```json
 {
   "email": "ваш_email@example.com",
   "password": "ваш_пароль"
 }
-```
 
 Структура проекта
 -----------------

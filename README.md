@@ -76,11 +76,11 @@ Excursium — автоматизация тестирования
 - test_filter.py → Фильтрация экскурсий → ✅ PASSED
 - test_calculator.py → Калькулятор (группа 25-34) → ✅ PASSED
 
-Документация
-------------
-- Тест-кейсы (15 шт.) → https://docs.google.com/spreadsheets/d/1wbXu3Wm7YJyac49O-SqbYAPl4ac8Gqhn3IbAI4_f26M/edit?usp=sharing
-- Баг-репорты (2 шт.) → bug_reports/bugs.md
-- Отчёт о тестировании → reports/report.md
+## Документация
+
+- **Тест-кейсы (15 шт.)** → [Google Sheets](https://docs.google.com/spreadsheets/d/1wbXu3Wm7YJyac49O-SqbYAPl4ac8Gqhn3IbAI4_f26M/edit?usp=sharing)
+- **Баг-репорты (2 шт.)** → [`bug_reports/bugs.md`](bug_reports/bugs.md)
+- **Отчёт о тестировании** → [`reports/report.md`](reports/report.md)
 
 Автор
 -----

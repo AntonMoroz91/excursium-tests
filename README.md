@@ -1,7 +1,7 @@
 Excursium — автоматизация тестирования
 
 О проекте
-
+---------
 Автотесты для сайта туристической компании Excursium.
 Проект выполнен в рамках стажировки Skillfactory (курс «Тестировщик-автоматизатор на Python»).
 
@@ -11,10 +11,8 @@ Excursium — автоматизация тестирования
 - фильтрация экскурсий,
 - онлайн-калькулятор цены.
 
----
-
 Технологии
-
+----------
 - Python 3.11
 - Selenium
 - pytest
@@ -22,19 +20,15 @@ Excursium — автоматизация тестирования
 - Firefox + GeckoDriver
 - Faker (для генерации тестовых данных при необходимости)
 
----
-
 Установка и запуск
-
+------------------
 git clone https://github.com/AntonMoroz91/excursium-tests.git
 cd excursium-tests
 pip install -r requirements.txt
 pytest tests/ -v
 
----
-
 Структура проекта
-
+-----------------
 - excursium-tests/
   - pages/
     - __init__.py
@@ -63,10 +57,8 @@ pytest tests/ -v
   - .gitignore
   - README.md
 
----
-
 Автотесты
-
+---------
 Тест: test_registration.py
 Описание: Регистрация (код подтверждения вводится вручную)
 Результат: ✅ PASSED
@@ -83,18 +75,14 @@ pytest tests/ -v
 Описание: Изменение цены при выборе группы 25-34
 Результат: ✅ PASSED
 
----
-
 Документация
-
+------------
 Тест-кейсы: https://docs.google.com/spreadsheets/d/1wbXu3Wm7YJyac49O-SqbYAPl4ac8Gqhn3IbAI4_f26M/edit?usp=sharing
 Баг-репорты: bug_reports/bugs.md
 Отчёт о тестировании: reports/report.md
 
----
-
 Автор
-
+-----
 Антон Мороз
 Студент Skillfactory
 Курс «Тестировщик-автоматизатор на Python (QAP)»

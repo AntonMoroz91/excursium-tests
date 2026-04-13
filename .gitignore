@@ -9,3 +9,4 @@ Scripts/
 screenshots/*.png
 reports/*.html
 .env
+registered_user.json

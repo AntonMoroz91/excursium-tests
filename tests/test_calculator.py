@@ -1,3 +1,7 @@
+"""
+Тест калькулятора: проверка изменения цены при выборе группы 25-34.
+"""
+
 import time
 from pages.calculator_page import CalculatorPage
 
@@ -10,12 +14,13 @@ def test_calculator_price_changes(browser):
     old_price = calc.get_price_text()
     print(f"Цена до: {old_price}")
 
-    calc.select_25_34()
+    calc.select_25_34()   # выбираем группу 25-34
     time.sleep(2)
 
     new_price = calc.get_price_text()
     print(f"Цена после: {new_price}")
 
+    # Проверяем, что цена изменилась
     assert old_price != new_price, "Цена не изменилась после выбора группы 25-34"
 
     browser.save_screenshot("screenshots/TC-10_calculator.png")

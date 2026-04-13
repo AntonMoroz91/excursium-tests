@@ -32,10 +32,12 @@ Excursium — автоматизация тестирования
 -----
 Перед запуском test_login.py создайте в корне файл `registered_user.json`:
 
+```json
 {
   "email": "ваш_email@example.com",
   "password": "ваш_пароль"
 }
+```
 
 Структура проекта
 -----------------

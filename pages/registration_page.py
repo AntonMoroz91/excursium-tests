@@ -20,13 +20,12 @@ class RegistrationPage(BasePage):
         time.sleep(1)
 
     def open_registration_form(self):
-        """Найти контейнер с кнопками и кликнуть по кнопке 'Регистрация'"""
         container = WebDriverWait(self.driver, 10).until(
             EC.presence_of_element_located((By.XPATH, "//*[@id='login-vue']/div/div[2]/div[3]/div[1]"))
         )
         buttons = container.find_elements(By.TAG_NAME, "button")
         if len(buttons) >= 2:
-            buttons[1].click()  # вторая кнопка = Регистрация
+            self.driver.execute_script("arguments[0].click();", buttons[1])  # JS-клик
         else:
             raise Exception("Кнопка 'Регистрация' не найдена")
         time.sleep(1)
@@ -49,13 +48,13 @@ class RegistrationPage(BasePage):
         checkbox = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable(self.TERMS_CHECKBOX)
         )
-        checkbox.click()
+        self.driver.execute_script("arguments[0].click();", checkbox)  # JS-клик
 
     def click_create_account(self):
         btn = WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable(self.CREATE_BUTTON)
         )
-        btn.click()
+        self.driver.execute_script("arguments[0].click();", btn)  # JS-клик
         time.sleep(2)
 
     def is_registration_successful(self):

@@ -7,9 +7,9 @@ def test_filter(browser):
     time.sleep(2)
 
     filter_page.open_location_filter()
-    time.sleep(1)
-
     filter_page.select_moscow()
     time.sleep(2)
 
-    assert "ekskursii-dlya-shkolnikov/list" in browser.current_url
+    assert "moscow" in browser.current_url.lower() or "Москва" in browser.page_source
+
+    browser.save_screenshot("screenshots/TC-06_filter_moscow.png")

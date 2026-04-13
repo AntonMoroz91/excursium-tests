@@ -43,14 +43,14 @@ Excursium — автоматизация тестирования
 -----------------
 - excursium-tests/
   - pages/
-    - __init__.py
+    - `__init__.py`
     - base_page.py
     - login_page.py
     - registration_page.py
     - filter_page.py
     - calculator_page.py
   - tests/
-    - __init__.py
+    - `__init__.py`
     - test_login.py
     - test_registration.py
     - test_filter.py

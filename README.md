@@ -73,7 +73,7 @@ Excursium — автоматизация тестирования
 
 Автор
 -----
-Антон Мороз
-Студент Skillfactory
-Курс «Тестировщик-автоматизатор на Python (QAP)»
-GitHub: https://github.com/AntonMoroz91
+   ✦   Антон Мороз
+   ✦   Студент Skillfactory
+   ✦   Курс «Тестировщик-автоматизатор на Python (QAP)»
+   ✦   GitHub: https://github.com/AntonMoroz91

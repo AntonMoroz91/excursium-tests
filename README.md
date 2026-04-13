@@ -23,10 +23,10 @@ Excursium — автоматизация тестирования
 
 Установка и запуск
 ------------------
-git clone https://github.com/AntonMoroz91/excursium-tests.git
-cd excursium-tests
-pip install -r requirements.txt
-pytest tests/ -v
+- git clone https://github.com/AntonMoroz91/excursium-tests.git
+- cd excursium-tests
+- pip install -r requirements.txt
+- pytest tests/ -v
 
 Структура проекта
 -----------------
@@ -60,19 +60,19 @@ pytest tests/ -v
 
 Автотесты
 ---------
-test_registration.py → Регистрация (код вводится вручную) → ✅ PASSED
-test_login.py → Авторизация пользователя → ✅ PASSED
-test_filter.py → Фильтрация экскурсий → ✅ PASSED
-test_calculator.py → Калькулятор (группа 25-34) → ✅ PASSED
+- test_registration.py → Регистрация (код вводится вручную) → ✅ PASSED
+- test_login.py → Авторизация пользователя → ✅ PASSED
+- test_filter.py → Фильтрация экскурсий → ✅ PASSED
+- test_calculator.py → Калькулятор (группа 25-34) → ✅ PASSED
 
 Документация
 ------------
-Тест-кейсы (15 шт.) → https://docs.google.com/spreadsheets/d/1wbXu3Wm7YJyac49O-SqbYAPl4ac8Gqhn3IbAI4_f26M/edit?usp=sharing
-Баг-репорты (2 шт.) → bug_reports/bugs.md
-Отчёт о тестировании → reports/report.md
+- Тест-кейсы (15 шт.) → https://docs.google.com/spreadsheets/d/1wbXu3Wm7YJyac49O-SqbYAPl4ac8Gqhn3IbAI4_f26M/edit?usp=sharing
+- Баг-репорты (2 шт.) → bug_reports/bugs.md
+- Отчёт о тестировании → reports/report.md
 
 Автор
 -----
-Антон Мороз
-Студент Skillfactory
-Курс «Тестировщик-автоматизатор на Python (QAP)»
+- Антон Мороз
+- Студент Skillfactory
+- Курс «Тестировщик-автоматизатор на Python (QAP)»
